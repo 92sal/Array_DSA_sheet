@@ -1,0 +1,47 @@
+import java.util.*;
+
+public class Que1 {
+    public static void main(String[] args) {
+        //for take input by user
+        Scanner obj=new Scanner(System.in);
+        //take array size from user
+        System.out.println("enter the size of array");
+        int n=obj.nextInt();
+        //define array
+        int nums[]=new int[n];
+        //take target element
+        System.out.println("enter the target of array");
+        int target=obj.nextInt();
+        //take input in array from user
+        System.out.println("enter the elemts of array");
+        for(int i=0;i<n;i++) {
+            nums[i] = obj.nextInt();
+        }
+        //create an hash table // for optimize solution O(N)
+        HashMap<Integer,Integer>hs=new HashMap<>();
+        //insert the  elment of array of array in hash map
+        for(int i=0;i<n;i++){
+            hs.put(nums[i],i); //(element(key),index(value))
+        }
+        // traversing on array
+        for(int j=0;j<n;j++){
+            int x=target-nums[j];
+            if(hs.containsKey(x) && hs.get(x)!=j){
+                System.out.println(j+","+hs.get(x));
+                break;
+            }
+        }
+        Two_sum(nums,target,n);// for brute force approach O(N^2)
+}
+public static void Two_sum(int nums[],int target,int n ){
+        for(int i=0;i<n;i++){
+            int x=nums[i];
+            for(int j=i+1;j<n;j++){
+                if(target-nums[j]==x){
+                    System.out.println(+i+" ,"+j);
+                    break;
+                }
+            }
+        }
+}
+}

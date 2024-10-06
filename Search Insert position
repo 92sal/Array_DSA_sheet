@@ -1,0 +1,24 @@
+//Search Insert position
+class Solution{
+Public static void main(String args[])
+{
+int Nums[]={1,3,4,5},int element=2;
+int start=0;int end=Nums.length-1;
+while(start<=end)
+{
+int mid=(start+end)/2;
+if(Nums[mid]==element)
+{ return mid;
+}
+if(element<Nums[mid])
+{
+end=mid-1;
+}
+else
+{
+start=mid+1;
+}
+}
+return start;
+}
+}

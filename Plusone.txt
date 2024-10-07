@@ -1,0 +1,29 @@
+//Quetion Link--https://leetcode.com/problems/plus-one/description/
+
+class Solution {
+    public static void main(String args[]){
+    int digits[]={1,4,6};
+    System.out.println(plusOne(int []digits);
+    }
+    public int[] plusOne(int[] digits) {
+        int n=digits.length-1;
+        for(int i=n;i>=0;i--){
+            // first case for only last digits increase whic is lase than 9
+            if(digits[i]<9){
+                digits[i]++;
+                break;
+
+            }//this case increse other value if cary is occur until last
+            else {
+                digits[i]=0;
+            }
+            
+        }
+        if(digits[0]==0){a
+            digits=new int [n+2];
+            digits[0]=1;
+            return digits;
+        }
+    return digits;
+}
+}

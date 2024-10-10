@@ -2,7 +2,7 @@
 Que link--https://leetcode.com/problems/merge-sorted-array/description/
 class Solution {
     public static void main(String args[]){
-    int    nums1[] = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3;
+    int    nums1[] = {1,2,3,0,0,0}, m = 3, nums2 []= {2,5,6}, n = 3;
     merge(nums1,m,nums2,n);
     }
     public void merge(int[] nums1, int m, int[] nums2, int n) {

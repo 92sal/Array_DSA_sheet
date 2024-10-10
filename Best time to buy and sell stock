@@ -1,7 +1,7 @@
 quetion link-https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 class Solution {
     public static void main(String args[]){
-    int prices = {7,1,5,3,6,4};
+    int prices[] = {7,1,5,3,6,4};
   maxProfit(int[] prices);
 }
     public int maxProfit(int[] prices) {

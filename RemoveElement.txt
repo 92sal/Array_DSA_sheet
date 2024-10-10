@@ -1,5 +1,6 @@
+quetion link-https://leetcode.com/problems/remove-element/description/
 class Solution {
-    public static void main(tring args[]){
+    public static void main(String args[]){
     int nums[]={3,2,2,3};//Array initialization 
     int val=3;//remove elemnt
     System.out.println(removeElement(nums,val));//print the number of  remaing element
